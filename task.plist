@@ -2,7 +2,10 @@
 
 # App价格版本监控
 # 需要填appid
-cron "30 7 * * *" script-path=https://raw.githubusercontent.com/nzw9314/QuantumultX/master/Neurogram-R/AppMonitor.js,tag=App监控
+cron "25 7 * * *" script-path=https://raw.githubusercontent.com/nzw9314/QuantumultX/master/Neurogram-R/AppMonitor.js,tag=App监控
+
+# > 每日一句+ 蚂蚁森林收能量
+cron "30 7 * * *" script-path=https://raw.githubusercontent.com/nzw9314/QuantumultX/master/yichahucha/cron_daily.js,tag=每日一句+蚂蚁森林收能量
 
 # 签到脚本
 # > 京东
