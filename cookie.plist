@@ -28,4 +28,4 @@ http-request ^https:\/\/api\.1sapp\.com\/content\/readV2? script-path=https://ra
 http-request ^https:\/\/api\.1sapp\.com\/x\/feed\/getReward? script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/qtt/qtt.cookie.js,tag=趣头条
 
 # > 来客有礼
-http-request https:\/\/draw\.jdfcloud\.com\/\/api\/turncard\/sign\? script-path=https://raw.githubusercontent.com/Sunert/Scripts/master/Task/lkyl.js,tag=来客有礼
+http-request https:\/\/draw\.jdfcloud\.com\/\/api\/bean\/square\/silverBean\/task\/get\? script-path=https://raw.githubusercontent.com/Sunert/Scripts/master/Task/lkyl.js,tag=来客有礼
