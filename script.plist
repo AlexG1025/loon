@@ -51,6 +51,5 @@ http-response ^https:\/\/receipt-validator\.herewetest\.com\/apple\/verifyTransa
 http-response ^https:\/\/api\.textnow\.me\/api2.0\/users\/.* script-path=https://raw.githubusercontent.com/langkhach270389/Scripting/master/Textnow.js, requires-body=true, timeout=10
 
 # 微信去广告
-
 http-response ^https?:\/\/mp\.weixin\.qq\.com\/mp\/getappmsgad requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/File/Wechat.js
 
