@@ -1,6 +1,6 @@
 # 订阅为脚本合集
 
-hostname = trade-acs.m.taobao.com, api.m.jd.com, *.googlevideo.com, api.zhihu.com, *.kuwo.cn, vip1.kuwo.cn, *.xiaoxiao*.com, getuserinfo-globalapi.zymk.cn, account.wps.cn, biz.caiyunapp.com, ap*.intsig.net, api.gamer.com.tw, api.rr.tv, receipt-validator.herewetest.com, api.textnow.me, 
+hostname = trade-acs.m.taobao.com, api.m.jd.com, *.googlevideo.com, api.zhihu.com, *.kuwo.cn, vip1.kuwo.cn, *.xiaoxiao*.com, getuserinfo-globalapi.zymk.cn, account.wps.cn, biz.caiyunapp.com, ap*.intsig.net, api.gamer.com.tw, api.rr.tv, receipt-validator.herewetest.com, api.textnow.me, mp.weixin.qq.com, 
 
 # > 淘宝比价
 # 不生效或失效的需要卸载 tb 重装，注意不开脚本进 tb 会失效
@@ -49,4 +49,8 @@ http-response ^https:\/\/receipt-validator\.herewetest\.com\/apple\/verifyTransa
 
 # textnow
 http-response ^https:\/\/api\.textnow\.me\/api2.0\/users\/.* script-path=https://raw.githubusercontent.com/langkhach270389/Scripting/master/Textnow.js, requires-body=true, timeout=10
+
+# 微信去广告
+
+http-response ^https?:\/\/mp\.weixin\.qq\.com\/mp\/getappmsgad requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/File/Wechat.js
 
