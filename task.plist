@@ -18,9 +18,9 @@ cron "10 0 * * *" script-path=https://raw.githubusercontent.com/chavyleung/scrip
 cron "7 0 * * *" script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/dongqiudi/dongqiudi.js, tag=懂球帝
 
 # > 趣头条
-cron "*/30 * * * *" script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/qtt/qtt.js,tag=趣头条
+cron "*/60 * * * *" script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/qtt/qtt.js,tag=趣头条
 
 # > 米读
 cron "12 0 * * *" script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/midu/miduSign.js, tag=米读签到
-cron "*/1 * * * *" script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/midu/miduRead.js, tag=米读阅读时长
+cron "*/30 * * * *" script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/midu/miduRead.js, tag=米读阅读时长
 
