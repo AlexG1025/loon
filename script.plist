@@ -1,6 +1,6 @@
 # 订阅为脚本合集
 
-hostname = trade-acs.m.taobao.com, api.m.jd.com, *.googlevideo.com, api.zhihu.com, *.kuwo.cn, vip1.kuwo.cn, *.*apps.com, *.xiao*.com, getuserinfo-globalapi.zymk.cn, account.wps.cn, biz.caiyunapp.com, ap*.intsig.net, api.gamer.com.tw, api.rr.tv, receipt-validator.herewetest.com, api.textnow.me, mp.weixin.qq.com, weather-data.apple.com, *.guoguoapps.com, *.pipiapps.com, *.lagoapps.com 
+hostname = trade-acs.m.taobao.com, api.m.jd.com, *.googlevideo.com, api.zhihu.com, *.kuwo.cn, vip1.kuwo.cn, *.*apps.com, *.xiao*.com, getuserinfo-globalapi.zymk.cn, account.wps.cn, biz.caiyunapp.com, ap*.intsig.net, api.gamer.com.tw, api.rr.tv, receipt-validator.herewetest.com, api.textnow.me, mp.weixin.qq.com, weather-data.apple.com, 8.8.8.8 
 
 # > 淘宝比价
 # 不生效或失效的需要卸载 tb 重装，注意不开脚本进 tb 会失效
@@ -55,6 +55,12 @@ http-response ^https?:\/\/mp\.weixin\.qq\.com\/mp\/getappmsgad requires-body=1,m
 
 # 彩云天气
 http-request https://weather-data.apple.com script-path=https://raw.githubusercontent.com/Peng-YM/QuanX/master/Tasks/caiyun.js, require-body=false,tag=彩云获取定位
+
+# > Chavy box (多账号Cookie保存切换)
+# 访问: https://8.8.8.8/home管理
+http-request ^https://8.8.8.8/api script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/chavy.box.js, requires-body=true
+http-response ^https://8.8.8.8/(home|sub|my|app|log)($|\/) script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/chavy.box.js, requires-body=true
+
 
 
 
